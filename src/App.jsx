@@ -1,12 +1,13 @@
-
-
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import './styles/global.css'; 
 function App() {
-
   return (
     <>
-      olá mundo
+      <Header />
+      <Hero />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

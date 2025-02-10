@@ -1,0 +1,51 @@
+/* Reset básico para manter a consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Layout responsivo padrão */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Tipografia */
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Ajustes para telas maiores */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  
