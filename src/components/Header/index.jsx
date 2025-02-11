@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import chicaLogoRemovebg from "../../../src/assets/chicaLogo-removebg.png";
 import ContactButtons from "../ContactButtons";
-import Navbar from "../NavBar";
+import Navbar from "../Navbar";
 const Header = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
   return (
     <>
