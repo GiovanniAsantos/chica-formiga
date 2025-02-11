@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./style.css";
 
-const NavBar = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
+const Navbar = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
   const handleScroll = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -26,4 +26,4 @@ NavBar.propTypes = {
   clientsRef: PropTypes.object.isRequired,
 };
 
-export default NavBar;
+export default Navbar;

@@ -1,8 +1,7 @@
 import PropTypes from "prop-types";
 import chicaLogoRemovebg from "../../../src/assets/chicaLogo-removebg.png";
 import ContactButtons from "../ContactButtons";
-import NavBar from "../NavBar";
-
+import Navbar from "../Navbar";
 const Header = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
   return (
     <>
@@ -32,7 +31,7 @@ const Header = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
               alt="Logo"
             />
           </div>
-          <NavBar
+          <Navbar
             heroRef={heroRef}
             aboutUsRef={aboutUsRef}
             productsRef={productsRef}
