@@ -3,9 +3,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .buttonNavbar {
     border: none;
-    background-color: transparent !important; /* Garante que não haja fundo azul */
+    background-color: transparent !important;
+    /* Evita fundo azul */
     font-size: 20px;
     cursor: pointer;
     padding: 10px 15px;
@@ -14,15 +16,20 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    color: #333 !important; /* 🔹 Garante que a cor do texto seja sempre essa */
+    color: #333 !important;
+    /* Mantém a cor padrão */
 }
 
 .buttonNavbar:focus,
-.buttonNavbar:active {
+.buttonNavbar:active,
+.buttonNavbar:focus-visible {
     outline: none !important;
     box-shadow: none !important;
     background: transparent !important;
-    color: #333 !important; /* 🔹 Mantém a cor normal do texto ao clicar */
+    color: #333 !important;
+    /* Mantém a cor padrão ao clicar */
+    border-bottom: 2px solid transparent !important;
+    /* Evita mudança de cor ao clicar */
 }
 
 .buttonNavbar:hover {
