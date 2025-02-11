@@ -3,33 +3,26 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .buttonNavbar {
     border: none;
-    background-color: transparent;
+    background-color: transparent !important; /* Garante que não haja fundo azul */
     font-size: 20px;
     cursor: pointer;
     padding: 10px 15px;
     transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
     -webkit-appearance: none;
-    /* Remove estilos padrão no Safari */
     -moz-appearance: none;
     appearance: none;
-    color: inherit;
-    /* Mantém a cor do texto */
+    color: #333 !important; /* 🔹 Garante que a cor do texto seja sempre essa */
 }
 
 .buttonNavbar:focus,
 .buttonNavbar:active {
     outline: none !important;
-    /* Remove a borda azul */
     box-shadow: none !important;
-    /* Remove sombra azul */
     background: transparent !important;
-    /* Garante que não haja fundo azul */
-    color: inherit !important;
-    /* Mantém a cor do texto */
+    color: #333 !important; /* 🔹 Mantém a cor normal do texto ao clicar */
 }
 
 .buttonNavbar:hover {
