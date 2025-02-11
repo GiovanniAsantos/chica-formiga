@@ -22,12 +22,15 @@
 
 .buttonNavbar:focus,
 .buttonNavbar:active {
-    outline: none;
-    /* Remove a borda azul ao clicar */
-    color: inherit;
-    /* Mantém a cor normal */
+    outline: none !important;
+    /* Remove a borda azul */
+    box-shadow: none !important;
+    /* Remove sombra azul */
+    background: transparent !important;
+    /* Garante que não haja fundo azul */
+    color: inherit !important;
+    /* Mantém a cor do texto */
 }
-
 
 .buttonNavbar:hover {
     border-bottom: 2px solid #FA9FAE;
