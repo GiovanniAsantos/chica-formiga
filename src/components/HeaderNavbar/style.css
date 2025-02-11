@@ -2,42 +2,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .buttonNavbar {
-    border: none;
-    background-color: transparent !important; /* Garante que não haja fundo azul */
-    font-size: 20px;
+}
+
+/* Estilo para os itens da Navbar */
+.navItem {
     cursor: pointer;
+    font-size: 20px;
     padding: 10px 15px;
     transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    color: #333 !important; /* 🔹 Garante que a cor do texto seja sempre essa */
-  }
-  
-  .buttonNavbar:focus,
-  .buttonNavbar:active {
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    color: #333 !important; /* 🔹 Mantém a cor normal do texto ao clicar */
-  }
-  
-  .buttonNavbar:hover {
+    color: #333 !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Efeito hover */
+.navItem:hover {
     border-bottom: 2px solid #FA9FAE;
     color: #FA9FAE;
-  }
-  
-  /* Adicionando cor diretamente no texto dos botões */
-  .buttonLabel {
-    color: inherit;
-    transition: color 0.3s ease; /* Transição suave para a cor */
-  }
-  
-  .buttonNavbar:hover .buttonLabel {
-    color: #FA9FAE;
-  }
-  
+}
+
+/* Remove o fundo azul no iPhone */
+.navItem:focus,
+.navItem:active {
+    outline: none !important;
+    background-color: transparent !important;
+    color: #333 !important;
+    -webkit-tap-highlight-color: transparent;
+}
