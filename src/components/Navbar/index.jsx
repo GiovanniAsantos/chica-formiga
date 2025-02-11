@@ -19,7 +19,7 @@ const Navbar = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
 };
 
 // Validação das props
-NavBar.propTypes = {
+Navbar.propTypes = {
   heroRef: PropTypes.object.isRequired,
   aboutUsRef: PropTypes.object.isRequired,
   productsRef: PropTypes.object.isRequired,

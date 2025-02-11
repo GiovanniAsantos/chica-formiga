@@ -1,20 +1,20 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.buttonNavbar {
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .buttonNavbar:hover {
-    border-bottom: 2px solid #FA9FAE; 
-    color: #FA9FAE; 
-  }
+  .buttonNavbar {
+      border: none;
+      background-color: transparent;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+      border-bottom: 2px solid transparent; 
+    }
+    
+    .buttonNavbar:hover {
+      border-bottom: 2px solid #FA9FAE; 
+      color: #FA9FAE; 
+    }
