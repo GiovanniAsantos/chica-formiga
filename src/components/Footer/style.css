@@ -1,5 +1,6 @@
 .footer {
     margin-top: 5vh;
+    border-radius: 10px;
     width: 100%; /* Ajusta a largura para a mesma do Hero */
     background: url('https://www.transparenttextures.com/patterns/old-paper-4.png'), #FAF1E6;
     padding: 3rem 0; /* Aumenta o espaçamento geral */
