@@ -1,4 +1,3 @@
-import { Space } from "antd";
 import PropTypes from "prop-types";
 import "./style.css";
 
@@ -9,12 +8,12 @@ const NavBar = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
 
   return (
     <>
-      <Space>
+      <div className="navbar">
         <button className="buttonNavbar" onClick={() => handleScroll(heroRef)}>Home</button>
-        <button className="buttonNavbar" onClick={() => handleScroll(aboutUsRef)}>Sobre nossa Loja</button>
+        <button className="buttonNavbar" onClick={() => handleScroll(aboutUsRef)}>Sobre</button>
         <button className="buttonNavbar" onClick={() => handleScroll(clientsRef)}>Clientes</button>
         <button className="buttonNavbar" onClick={() => handleScroll(productsRef)}>Produtos</button>
-      </Space>
+      </div >
     </>
   );
 };

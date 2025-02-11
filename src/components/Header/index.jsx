@@ -27,7 +27,7 @@ const Header = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
         >
           <div style={{ alignSelf: "center" }}>
             <img
-              style={{ height: "9rem", width: "9rem" }}
+              style={{ height: "12rem", width: "12rem" }}
               src={chicaLogoRemovebg}
               alt="Logo"
             />

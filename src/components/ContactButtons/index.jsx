@@ -1,12 +1,10 @@
 import { InstagramOutlined, WhatsAppOutlined } from "@ant-design/icons";
-import { Space } from "antd";
 import "./style.css";
 
 const ContactButtons = () => {
   return (
     <>
-      <Space>
-        {/* Botão do WhatsApp */}
+      <div className="contactButtonContainer">
         <a
           href="https://wa.me/5585992528922"
           target="_blank"
@@ -27,7 +25,7 @@ const ContactButtons = () => {
             <InstagramOutlined />
           </button>
         </a>
-      </Space>
+      </div>
     </>
   );
 };

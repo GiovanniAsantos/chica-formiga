@@ -1,12 +1,10 @@
-/* Importação da fonte deve vir primeiro */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-/* Reset básico para manter a consistência entre navegadores */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dancing Script', cursive; /* Aplica fonte padrão */
+  font-family: 'Dancing Script', cursive;
 }
 
 body {
@@ -16,7 +14,6 @@ body {
   padding-left: 50px;
 }
 
-/* Layout responsivo padrão */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -24,11 +21,10 @@ body {
   padding: 20px;
 }
 
-/* Tipografia */
 h1 {
   font-size: 2rem;
   text-align: center;
-  font-family: 'Playfair Display', serif; /* Aplica fonte elegante nos títulos */
+  font-family: 'Playfair Display', serif;
 }
 
 p {
@@ -36,7 +32,6 @@ p {
   text-align: center;
 }
 
-/* Ajustes para telas maiores */
 @media (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -57,28 +52,29 @@ p {
   }
 }
 
-/* 🔹 Ajustes para telas menores (mobile) */
 @media (max-width: 600px) {
   body {
-    padding-right: 20px;  /* Reduz o padding lateral */
+    padding-right: 20px;
     padding-left: 20px;
   }
 
   .container {
-    padding: 10px; /* Menos espaço interno */
+    padding: 10px;
   }
 
   .buttonContact {
-    width: 2.5rem;  /* Botões menores */
+    width: 2.5rem;
     height: 2.5rem;
-    font-size: 16px; /* Ícones menores */
+    font-size: 16px;
     border-width: 2px;
   }
 
-  /* Move os botões mais para a direita */
-  .contactButtonsContainer {
+  .contactButtonContainer {
     display: flex;
+    position: absolute;
+    bottom: 70px;
+    right: -20px;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 12px;
   }
 }

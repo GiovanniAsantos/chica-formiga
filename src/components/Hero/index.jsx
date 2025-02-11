@@ -5,7 +5,8 @@ const Hero = () => {
     <div
       style={{
         marginTop: "5vh",
-        background: "url('https://www.transparenttextures.com/patterns/old-paper-4.png'), #FAF1E6", // Cor bege claro e textura de papel
+        background:
+          "url('https://www.transparenttextures.com/patterns/old-paper-4.png'), #FAF1E6", // Cor bege claro e textura de papel
         width: "100%",
         height: "60vh",
         display: "flex",
@@ -15,11 +16,28 @@ const Hero = () => {
         overflow: "hidden",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        borderRadius:"10px"
+        borderRadius: "10px",
+        textAlign: "center",
       }}
     >
-      <div style={{display:"flex", flexDirection:"column", justifyContent:"space-around", height:"70%", padding:"30px"}}>
-        <h1 style={{ color: "#5A3D3D", zIndex: 1, position: "relative", fontFamily: "Dancing Script, sans-serif" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-around",
+          alignItems: "center",
+          height: "100%",
+          padding: "30px",
+        }}
+      >
+        <h1
+          style={{
+            color: "#5A3D3D",
+            zIndex: 1,
+            position: "relative",
+            fontFamily: "Dancing Script, sans-serif",
+          }}
+        >
           Seja Bem-vindo ao nosso Site
         </h1>
         <p style={{ color: "#5A3D3D" }}>
