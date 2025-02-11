@@ -11,6 +11,8 @@ export default defineConfig({
       }
     }
   },
+  base: "/chica-formiga/",  // Substitua pelo nome do repositório
+  plugins: [react()],
   build: {
     rollupOptions: {
       external: ['antd/dist/antd.css'] // Adiciona o CSS do Ant Design como dependência externa
