@@ -1,8 +1,7 @@
-import "./style.css";
 import img1 from "../../assets/client1.jpg";
 import img2 from "../../assets/client2.jpg";
 import img3 from "../../assets/client3.jpg";
-import { Space } from "antd";
+import "./style.css";
 
 const Clients = () => {
   const clients = [

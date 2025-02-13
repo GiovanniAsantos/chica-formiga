@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import chicaLogoRemovebg from "../../../src/assets/chicaLogo-removebg.png";
 import ContactButtons from "../ContactButtons";
 import NavBar from "../NavBar";
 
-const Header = () => {
+const Header = ({ heroRef, aboutUsRef, productsRef, clientsRef }) => {
   return (
     <>
       <div
@@ -11,7 +12,7 @@ const Header = () => {
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
-          position: "relative", // Permite o posicionamento absoluto dentro da div
+          position: "relative",
           padding: "0",
           margin: "0",
         }}
@@ -21,7 +22,7 @@ const Header = () => {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            alignItems: "center", // Centraliza os elementos dentro da coluna
+            alignItems: "center",
           }}
         >
           <div style={{ alignSelf: "center" }}>
@@ -31,16 +32,20 @@ const Header = () => {
               alt="Logo"
             />
           </div>
-          <NavBar />
+          <NavBar
+            heroRef={heroRef}
+            aboutUsRef={aboutUsRef}
+            productsRef={productsRef}
+            clientsRef={clientsRef}
+          />
         </div>
 
-        {/* Posiciona o ContactButtons no canto direito, mas no centro verticalmente */}
         <div
           style={{
-            position: "absolute", // Torna possível a posição absoluta dentro do container
-            right: "10px", // Distância da borda direita
-            top: "50%", // Centraliza verticalmente
-            transform: "translateY(-50%)", // Ajusta a centralização vertical
+            position: "absolute",
+            right: "10px",
+            top: "50%",
+            transform: "translateY(-50%)",
           }}
         >
           <ContactButtons />
@@ -48,6 +53,14 @@ const Header = () => {
       </div>
     </>
   );
+};
+
+// ✅ Adicionando PropTypes para validar as props
+Header.propTypes = {
+  heroRef: PropTypes.object.isRequired,
+  aboutUsRef: PropTypes.object.isRequired,
+  productsRef: PropTypes.object.isRequired,
+  clientsRef: PropTypes.object.isRequired,
 };
 
 export default Header;

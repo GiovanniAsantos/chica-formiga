@@ -13,7 +13,7 @@
   
   .footer a {
     color: #5A3D3D; /* Cor do link igual à das letras */
-    text-decoration: none; /* Remove o sublinhado do link */
+    text-decoration: underline; /* Remove o sublinhado do link */
   }
   
   .footer a:hover {
