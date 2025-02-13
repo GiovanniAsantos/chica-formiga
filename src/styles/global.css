@@ -7,11 +7,23 @@
   font-family: 'Dancing Script', cursive;
 }
 
+/* Fundo branco padrão para desktop */
 body {
   background-color: #FADCD9;
   color: #333;
   padding-right: 50px;
   padding-left: 50px;
+}
+
+/* Aplica o fundo apenas em telas menores (mobile) */
+@media (max-width: 600px) {
+  body {
+    background-image: url('/src/assets/fundoChica-removebg-preview.png');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
 }
 
 .container {
